@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+
+body{
+    margin: 0; /* Remove default margin */
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.title{
+    padding: 25px;
+}
+
+
+#names{
+    padding: 10px;
+    margin-top: 30px;
+    
+}
+
+.result{
+    padding: 30px;
+    color: #FFF;
+}
+
+
+#names:hover{
+    cursor: pointer;
+    background-color: rgb(89, 78, 106);
+}
+.container{
+    width: 400px;
+    height: 200px;
+    border: 2px solid #333; /* Box border with 2px width and color #333 */
+    border-radius: 8px;
+    background-color: #ba23e023; /* Optional background color for the container */
+    text-align: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    position: absolute; /* Set the footer positioning to absolute */
+    bottom: 0; /* Position the footer at the bottom of the page */
+    width: 100%; /* Make the footer take the full width of the page */
+    background-color: #f0f0f0; /* Optional background color for the footer */
+    text-align: center; /* Center the content inside the footer */
+    padding: 10px 0; /* Add some padding to the top and bottom of the footer content */
+  }
